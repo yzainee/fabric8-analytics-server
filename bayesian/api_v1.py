@@ -738,7 +738,7 @@ class StackAnalyses(ResourceWithSchema):
         github_url = request.form.get("github_url")
         ref = request.form.get('github_ref')
         user_email = request.headers.get('UserEmail')
-        scan_repo_url = request.headers.get('scanRepoUrl')
+        scan_repo_url = request.headers.get('ScanRepoUrl')
         print('Email ' + user_email)
         print('GitUrl ' + scan_repo_url)
         if not user_email:
